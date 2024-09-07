@@ -27,7 +27,7 @@ const DevicesLog = () => {
 
   const fetchDevices = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/devices');
+      const response = await fetch('https://resource-9wq8.onrender.com/api/devices');
       const data = await response.json();
       setDevices(data);
     } catch (error) {
@@ -44,7 +44,7 @@ const DevicesLog = () => {
     const newDevice: Device = { user, type, date, startTime, endTime };
 
     try {
-      const response = await fetch('http://localhost:5000/api/devices', {
+      const response = await fetch('https://resource-9wq8.onrender.com/api/devices', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newDevice),
@@ -61,7 +61,7 @@ const DevicesLog = () => {
 
   const deleteDevice = async (id: string) => {
     try {
-      await fetch(`http://localhost:5000/api/devices/${id}`, {
+      await fetch(`https://resource-9wq8.onrender.com/api/devices/${id}`, {
         method: 'DELETE',
       });
       setDevices(devices.filter(device => device._id !== id));
