@@ -116,6 +116,9 @@ const DevicesLog = () => {
             <option value="Projector">Projector</option>
             <option value="Smart Board">Smart Board</option>
             <option value="Lab">Lab</option>
+            <option value="Cricket Kits">Cricket Kits</option>
+            <option value="Badminton kits">Badminton Kits</option>
+            <option value="BasketBall Courts">BasketBall Courts</option>
             <option value="Seminar Hall">Seminar Hall</option>
             
           </select>
