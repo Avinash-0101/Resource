@@ -116,6 +116,8 @@ const DevicesLog = () => {
             <option value="Projector">Projector</option>
             <option value="Smart Board">Smart Board</option>
             <option value="Lab">Lab</option>
+            <option value="Lab">Seminar Hall</option>
+            
           </select>
           <input
             className="border p-2 rounded-md"
